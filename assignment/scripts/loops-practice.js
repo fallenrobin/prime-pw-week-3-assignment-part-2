@@ -29,12 +29,14 @@ for (let i = 3; i <=5; i++) {
 }
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
-console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+console.log('Fancy version: count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 const arr = [2,3,4,5,6,7,8,9,10]
 const evenNumbers = arr.filter(numbers => {
   return numbers % 2 === 0;
 }) //Parrotted from https://bobbyhadz.com/blog/javascript-find-even-numbers-in-array
-//...I DON'T GET IT!!
+//...I def don't totally get it!!
+console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+
 console.log(evenNumbers);
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 
@@ -59,6 +61,11 @@ console.log('---- 3. While loop ----');
 console.log('Some stars using while:');
 //WHILE (something is true) <-while what is true?!!
 //console.log (each star in the "stars" array)
+let i=0;
+while (i<5) {
+  console.log(stars[i]);
+  i++
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
@@ -69,9 +76,9 @@ i++;
 }
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
-// let i=10
-// while (i>=5); {
-// console.log(i);
-// i--;
-// }
+let i=10
+while (i>=5); {
+console.log(i);
+i--;
+}
 //Error says "i" has already been declared; why can't I assign it a new value since it's lower on the page?

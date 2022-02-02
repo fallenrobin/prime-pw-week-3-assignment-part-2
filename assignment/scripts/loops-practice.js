@@ -41,7 +41,7 @@ console.log(evenNumbers);
 console.log('STRETCH: countdown from 5 to 0');
 for (let i = 5; i >= 0; i--) {
   console.log(i);
-
+}
 // 2. For of loops
 console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
@@ -50,7 +50,7 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 console.log('Some stars:');
 for (var name of stars) {
   console.log(name);
-}
+}//Why do we see "VAR" appear here? Or is it unnecessary?
 
 // 3. While loops
 console.log('---- 3. While loop ----');
@@ -74,4 +74,4 @@ console.log('count backwards from 10 to 5');
 // console.log(i);
 // i--;
 // }
-//Error says "i" has already been declared; can't I assign it a new value since it's lower on the page?
+//Error says "i" has already been declared; why can't I assign it a new value since it's lower on the page?

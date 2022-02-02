@@ -37,8 +37,10 @@ const evenNumbers = arr.filter(numbers => {
 //...I DON'T GET IT!!
 console.log(evenNumbers);
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
-console.log('STRETCH: countdown from 5 to 0');
 
+console.log('STRETCH: countdown from 5 to 0');
+for (let i = 5; i >= 0; i--) {
+  console.log(i);
 
 // 2. For of loops
 console.log('---- 2. For Of loop ----');
@@ -55,13 +57,21 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-while (true) {
-  console.log(stars.index);
-}
+//WHILE (something is true) <-while what is true?!!
+//console.log (each star in the "stars" array)
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-while (true) {
-
+let i=0
+while (i<=5) {
+console.log(i);
+i++;
 }
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+// let i=10
+// while (i>=5); {
+// console.log(i);
+// i--;
+// }
+//Error says "i" has already been declared; can't I assign it a new value since it's lower on the page?

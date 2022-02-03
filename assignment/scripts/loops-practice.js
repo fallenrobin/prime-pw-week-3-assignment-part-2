@@ -27,17 +27,21 @@ console.log('count from 3 to 5');
 for (let i = 3; i <=5; i++) {
   console.log(i);
 }
-// 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
-//   - Which part of the example loop do you need to change to do this?
-console.log('Fancy version: count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-const arr = [2,3,4,5,6,7,8,9,10]
-const evenNumbers = arr.filter(numbers => {
-  return numbers % 2 === 0;
-}) //Parrotted from https://bobbyhadz.com/blog/javascript-find-even-numbers-in-array
-//...I def don't totally get it!!
-console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-console.log(evenNumbers);
+// console.log('Fancy version we have not yet learned: count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+// const arr = [2,3,4,5,6,7,8,9,10]
+// const evenNumbers = arr.filter(numbers => {
+//   return numbers % 2 === 0;
+// })
+//Parrotted from https://bobbyhadz.com/blog/javascript-find-even-numbers-in-array
+//...I sort of get it, but I don't know what to then print and I'm not gonna worry about it.
+// 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
+//   Start i as 2 instead of 0; run loop while i is <= 10; increment i by 2
+console.log('Count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+for (let i = 2; i <= 10; i+=2) {
+  console.log(i);
+}
+
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 
 console.log('STRETCH: countdown from 5 to 0');
@@ -50,7 +54,7 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-for (var name of stars) {
+for (name of stars) {
   console.log(name);
 }//Why do we see "VAR" appear here? Or is it unnecessary?
 
@@ -61,24 +65,23 @@ console.log('---- 3. While loop ----');
 console.log('Some stars using while:');
 //WHILE (something is true) <-while what is true?!!
 //console.log (each star in the "stars" array)
-let i=0;
-while (i<5) {
+let i=0;//Do I have to declare this outside the While loop? Or can it be inside?
+while (i<=4) {
   console.log(stars[i]);
-  i++
+  i++;
 }
-
-// 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
+//
+// // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-let i=0
-while (i<=5) {
-console.log(i);
-i++;
+let count=0
+while (count<=5) {
+console.log(count);
+count++;
 }
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
-let i=10
-while (i>=5); {
-console.log(i);
-i--;
+let index=10
+while (index>=5) {
+console.log(index);
+index--;
 }
-//Error says "i" has already been declared; why can't I assign it a new value since it's lower on the page?
